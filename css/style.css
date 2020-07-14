@@ -1,0 +1,453 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(250, 250, 250, .9);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 18px;
+}
+
+/* Whole page effect */
+
+.whole-page {
+  margin: 0 auto;
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  height: 100%;
+}
+
+/* top section effect */
+
+.main-section {
+  /* border: 1px solid black; */
+  max-width: 935px;
+  width: 100%;
+  padding-bottom: 44px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+   justify-content: center; 
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+/* the phone that holds the slid is the background here*/
+
+.background-image {
+  background-image: url("../img/43cc71bb1b43.png");
+  background-repeat: no-repeat;
+  background-position:0 0;
+  background-size: 454px 618px;
+  position: relative;
+  height: 618px;
+  width: 100%;
+  /*margin-left: 10px;*/
+  -webkit-flex-basis: 454px;
+  flex-basis: 454px;
+
+}
+
+.images {
+  margin: 100px 0 0 151px;
+  /* position: relative; */
+}
+
+/* Initial size for every image to make sure they fit in phone*/
+
+.images > img {
+	position: absolute; 
+  height: 427px;
+  width: 240px;
+}
+
+/* The top part having login functionality*/
+
+.login-section {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: stretch; */
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+  height: 618px;
+  /*margin-top: 25px;*/
+  /*margin-left: 12px;*/
+  flex-grow: 1;
+  -webkit-box-pack: center;
+}
+
+/*Create instagram logo at the top*/
+
+.logo {
+  overflow: hidden;
+  display: block;
+  background-image: url("../img/32f0a4f27407.png");
+  margin: 22px auto 12px;
+  background-repeat: no-repeat;
+  background-position: 0 -130px;
+  height: 51px;
+  width: 175px;
+  text-indent: 110%;
+  white-space: nowrap;
+}
+
+div.login-section div.login {
+  background-color: white;
+  border: 1px solid rgba(110, 109, 109, .7);
+  margin: 0 0 10px;
+  padding: 10px 0 20px;
+  /*height: 100%;*/
+}
+
+div.login-form {
+  display: flex;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  align-items: center;
+}
+
+form.login {
+  display: flex;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  /* justify-content: center; */
+}
+
+.top-margin {
+  margin-bottom: 24px;
+}
+
+div.username-entry, div.password-entry {
+  margin: 0 25px 6px;
+  width: 100%;
+  align-items: stretch;
+}
+
+div.username, div.password {
+  background: rgba(250, 250, 250, .9);
+  border: 1px solid rgba(110, 109, 109, .7);
+  border-radius: 3px;
+  flex-direction: row;
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  margin: 5px 0px;
+}
+
+
+span.placeholder {
+  color: rgba(110, 109, 109, .7);
+  font-size: 12px;
+  height: 36px;
+  left: 8px;
+  line-height: 36px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-overflow: ellipsis;
+  transform-origin: left;
+  transition: transform ease-out .1s,-webkit-transform ease-out .1s;
+  user-select: none;
+  white-space: nowrap;
+}
+
+label {
+  display: flex;
+  height: 36px;
+  flex: 1 0 0;
+  padding: 0;
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  cursor: default;
+  width: 100%;
+  background-color: rgba(250, 250, 250, .9);
+}
+
+input {
+  font-size: 16px;
+  -webkit-appearance: none;
+  background: rgba(250, 250, 250, .9);
+  border: 0;
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  margin: 0;
+  outline: 0;
+  overflow: hidden;
+  padding: 9px 0 7px 8px;
+  text-overflow: ellipsis;
+  display: inline-block;
+  cursor: text;
+}
+
+div.right-padding {
+  align-items: center;
+  flex: 0 0 auto;
+  flex-direction: row;
+  height: 100%;
+  padding-right: 8px;
+}
+
+/* Login button */
+
+div.login-btn {
+  /*margin: 0 25px 8px;*/
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  padding: 0 43px 0px;
+}
+
+button.login-btn {
+	background-color: rgba(0, 149, 246, .3);
+	opacity: 1;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: white;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	font-weight: 600;
+	padding: 5px 9px;
+	text-align: center;
+	text-transform: inherit;
+	width: 100%;
+	user-select: none;
+	height: 100%;
+}
+
+div.or {
+	display: flex;
+	flex-direction: row;
+	/*width: 100%;*/
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	color: #dbdbdb;
+	font-weight: bold;
+	margin: 20px 0;
+	display: relative;
+}
+
+.text-or {
+	margin: 0px 10px;
+}
+
+.left-line, .right-line {
+	height: 1px;
+	background-color: rgba(110, 109, 109, .7);
+	width: 110px;
+}
+
+div.login-with-facebook {
+	display: flex;
+	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	width: 100%;
+	align-content: center;
+	justify-content: center;
+	margin: 5px 0 20px;
+
+}
+
+div.login-with-facebook button {
+	outline: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	background-color: inherit;
+	display: flex;
+	align-content: center;
+	/*justify-content: center;*/
+	position: relative;
+}
+
+.facebook-icon {
+	display: inline-block;
+	background: url("../img/facebook.png");
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: -2px;
+}
+
+.facebook-text {
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	word-spacing: 1px;
+	margin-left: 30px;
+	color: #115588;
+}
+
+div.forgot-password {
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+	width: 100%;
+}
+
+a.forgot-password{
+	color: #115588;
+	font-size: 13px;
+}
+
+/* Sign up section*/
+div.signup {
+	background-color: white;
+  border: 1px solid rgba(110, 109, 109, .7);
+  margin: 0 0 10px;
+  padding: 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+div.signup a {
+  color: #115588;
+	font-weight: bold;
+}
+
+.getapp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: -10px;
+}
+
+p.get-app {
+	font-size: 15px;
+}
+
+.get-the-app {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.app-store, .google-play {
+  width: 136px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.footer-section {
+	padding: 0 20px;
+	position: relative;
+	margin: 0;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	font-size: 13px;
+}
+
+div.footer {
+	max-width: 1012px;
+	padding: 38px 0;
+	width: 80%;
+}
+
+nav.nav {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	display: flex;
+	-webkit-box-align: stretch;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+  display: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  /*font-weight: bold;*/
+  color: #115588;
+}
+
+li {
+  padding-right: 10px;
+}
+
+span.copyright {
+	display: flex;
+	justify-content: flex-end;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #dbdbdb;
+}
+
+@media screen and (max-width: 1045px) {
+  div.footer {
+    /*visibility: hidden;*/
+    width: 100%;
+  }
+
+  nav.nav {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    -webkit-box-align: stretch;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .background-image {
+    visibility: hidden;
+    width: 0px;
+  }
+
+  .login-section {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  ul {
+    /*visibility: hidden;*/
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
