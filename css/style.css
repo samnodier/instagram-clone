@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(250, 250, 250, .9);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
   line-height: 18px;
 }
 
@@ -150,7 +150,7 @@ div.username, div.password {
   font-size: 14px;
   position: relative;
   width: 100%;
-  margin: 5px 0px;
+  margin: 2px 0px;
 }
 
 
@@ -246,7 +246,7 @@ div.or {
 	justify-content: space-between;
 	color: #dbdbdb;
 	font-weight: bold;
-	margin: 20px 0;
+	margin: 20px auto 15px;
 	display: relative;
 }
 
@@ -255,7 +255,7 @@ div.or {
 }
 
 .left-line, .right-line {
-	height: 1px;
+	height: 1.3px;
 	background-color: rgba(110, 109, 109, .7);
 	width: 110px;
 }
@@ -369,7 +369,8 @@ a {
 	justify-content: center;
 	position: relative;
 	width: 100%;
-	font-size: 13px;
+	font-size: 11px;
+  font-weight: bold;
 }
 
 div.footer {
@@ -414,7 +415,7 @@ span.copyright {
 	justify-content: flex-end;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #dbdbdb;
+	color: #cacaca;
 }
 
 @media screen and (max-width: 1045px) {
@@ -444,7 +445,7 @@ span.copyright {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   ul {
     /*visibility: hidden;*/
     justify-content: flex-start;
