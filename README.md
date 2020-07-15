@@ -5,4 +5,4 @@ This is an Instagram clone made with HTML, CSS and a little jQuery for front-end
 
 :two: The front end is :100: working with the **media queries** to support different widths
 
-Contact me via [GitHub](https://github.com/sam0132nodier/), [Instragram](https://www.instagram.com/sam0132nodier/).
+Contact me via [GitHub](https://github.com/sam0132nodier/), [Instagram](https://www.instagram.com/sam0132nodier/).
